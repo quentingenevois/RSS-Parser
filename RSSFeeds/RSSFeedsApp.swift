@@ -11,7 +11,11 @@ import SwiftUI
 struct RSSFeedsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ArticlesListView()
+                    .navigationBarTitle("Apple News")
+            }
+            .tint(.orange)
         }
     }
 }
